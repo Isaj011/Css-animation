@@ -1,0 +1,49 @@
+.model-hero {
+    height: 170px;
+    margin-top: 120px;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(rgba(164,247,243,.38),rgba(0,0,0,.8)),url(/_nuxt/img/model.ec1762a.png);
+}
+
+.icon {
+    width: 100%;
+    height: 70%;
+    animation: translation 3s infinite alternate;
+}
+.iconb {
+    width: 100%;
+    height: 70%;
+    animation: rotation 5s infinite linear;
+}
+
+.iconc {
+    width: 100%;
+    height: 70%;
+    animation: matrix 5s infinite alternate;
+}
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(355deg);
+    }
+}
+@keyframes matrix {
+    from {
+        transform: matrix(1, -0.3, 0, 1, 0, 0);
+    }
+    to {
+        transform: matrix(-1, -0.3, 0, 2, 0, 1);
+    }
+}
+@keyframes translation {
+    from {
+        transform:translate(200px,-25px)
+    }
+    to {
+        transform: translate(200px, 25px)
+    }
+}
